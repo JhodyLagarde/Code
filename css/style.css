@@ -20,13 +20,6 @@ body {
     justify-content: center;
 }
 
-h1, h2 {
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25.83px;
-    margin: 0;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -69,6 +62,12 @@ a {
 
 .flex {
     display: flex;
+}
+
+.p-titre-filtre-footer {
+    font-size: 18px;
+    line-height: 21.13px;
+    font-weight: 700;
 }
 
 /******** Header *********/
@@ -126,15 +125,13 @@ nav li a:hover{
 
 /* background et aspect de l'icone recherche */
 
-
-
 .form-recherche i {
     color: black;
     padding: 15px 16px 15px 18px;
     width: 14px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-    height: 18px;
+    height: 17px;
 }
 
 .form-recherche input {
@@ -162,7 +159,7 @@ nav li a:hover{
     background-color: var(--main-color);
 }
 
-.form-recherche button :hover{
+.form-recherche button:hover{
     height: 47px;
     border-radius: 0px 15px 15px 0px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -178,8 +175,6 @@ nav li a:hover{
 .form-filtre p {
     width: 54px;
     height: 21px;
-    font-size: 18px;
-    line-height: 21.13px;
     margin-right: 15px; 
 }
 
@@ -198,9 +193,12 @@ input[type='checkbox']{
     align-items: center;
 }
 
-input[type="checkbox"]:checked + label{
+input[type="checkbox"]:hover + label{
     background-color: #DEEBFF;
-    border-color: transparent;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #DEEBFF;
 }
 
 /* positionnement texte boutons */
@@ -229,12 +227,15 @@ input[type="checkbox"]:checked + label{
 .info {
     flex-direction: row;
     height: 19px;
+    align-items: center;
+    margin-bottom: 35px;
 }
 
 .info p{
     font-size: 16px;
     line-height: 18.78px;
     margin: 0;
+    padding-left: 10px;
 }
 
 .info i {
@@ -250,7 +251,7 @@ input[type="checkbox"]:checked + label{
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .hebergements-and-populaires section {
@@ -263,6 +264,67 @@ input[type="checkbox"]:checked + label{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 250.33px;
+    height: 124px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.ensemble-hebergements-cards-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ensemble-hebergements-cards-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.afficher-plus {
+    width: 811px;
+    height: 21px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21.13px;
+    margin-top: 30px;
+    margin-bottom: 2.5px;
 }
 
 /****** Populaires ***********/
@@ -310,6 +372,82 @@ input[type="checkbox"]:checked + label{
     margin-bottom: 5px;
 }
 
+/**** Activités ****/
+.activités {
+    padding: 30px;
+    margin-bottom: 35px;
+}
+
+.activités-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.card-a {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.activités-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activités-cards .card-a {
+    display: flex;
+    flex-direction: column;
+}
+
+.activités-cards img {
+    width: 297.5px;
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activités-cards .card-content {
+    padding-left: 15px;
+}
+
+.activités-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.activités-cards .card-subtitle {
+    margin: 0;
+}
+
+.activités-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+/******* footer ******/
+footer{
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.liste p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+}
+
+footer ul {
+    width: 446.67px;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin: 15px 0 15px 0 ;
+} 
 
 
 
@@ -358,11 +496,15 @@ input[type="checkbox"]:checked + label{
         justify-content: center;
     }
 
+    nav {
+        justify-content: center;
+    }
+
     nav li a:hover{
         border-top: none;
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
-        padding-top: 14px;
+        padding-bottom: 14px;
     }
 
 }
