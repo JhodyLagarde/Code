@@ -184,7 +184,7 @@ input[type='checkbox']{
 .filtres-buttons{
     flex-direction: row;
     margin-right: 15px;
-    max-height: 50px; 
+    height: 50px; 
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     align-items: center;
@@ -394,6 +394,10 @@ input[type="checkbox"]:checked + label {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card-a img {
+    object-fit: cover;
+}
+
 .activités-cards{
     display: flex;
     justify-content: space-between;
@@ -419,6 +423,7 @@ input[type="checkbox"]:checked + label {
 .activités-cards .card-content {
     height: 59px;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .activités-cards .card-title {
@@ -614,11 +619,16 @@ footer li {
     }
 
     .ensemble-filtre-buttons {
+        width: 100%;
         flex-direction: column;
     }
 
     .ensemble-filtre-buttons label {
-        width: 50%;
+        width: 60%;
+    }
+
+    .ensemble-filtre-buttons-1 {
+        margin-bottom: 20px;
     }
 
     .filtres-buttons span {
@@ -626,4 +636,67 @@ footer li {
         font-size: 14px;
         line-height: 16.44px;
     }
+
+    /* hebergments & populaires */
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+
+    .hebergements-and-populaires .hebergements {
+        background: none;
+    }
+
+    /* populaires */
+
+    .populaires {
+        margin-top: 0;
+    }
+
+    .populaires-cards {
+       flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    /* hébergements */
+
+    .ensemble-hebergements-cards-1 {
+        flex-direction: column;
+    }
+
+    .ensemble-hebergements-cards-2 {
+        flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+
+    /* activites */
+
+    .activités-cards {
+        flex-direction: column;
+    }
+
+    .activités-cards a {
+        width: 100%;
+    }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+
+    }
+
+    .liste {
+        margin-bottom: 50px;
+    }
+
+
 }
