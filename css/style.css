@@ -275,12 +275,12 @@ input[type="checkbox"]:checked + label {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 33px;
 }
 
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
 }
 
 .hebergements-cards img {
@@ -316,16 +316,17 @@ input[type="checkbox"]:checked + label {
 }
 
 .ensemble-hebergements-cards-2 {
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .ensemble-hebergements-cards-1 a {
-    width: 30%;
+    width: 31%;
 }
 
 .ensemble-hebergements-cards-2 a {
-    width: 30%;
+    width: 31%;
 }
 
 
@@ -528,14 +529,22 @@ footer li {
         margin-top: 50px;
     }
 
+    .populaires-title {
+        margin-bottom: 33px;
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
+    .populaires-cards .card {
+        margin: 0;
+    }
+
     .populaires-cards a {
-        width: 30%;
+        width: 32%;
     }
 
     .populaires-cards .card-title {
@@ -680,6 +689,12 @@ footer li {
 
     .hebergements-and-populaires {
         flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .hebergements-and-populaires section {
+        padding: 30px 20px;
+        border-radius: 0;
     }
 
     .hebergements-and-populaires .hebergements {
@@ -689,11 +704,21 @@ footer li {
     /* populaires */
 
     .populaires {
-        margin-top: 0;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .populaires-title {
+        margin-bottom: 0;
     }
 
     .populaires-cards {
-       flex-direction: column;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        margin-top: 15px;
     }
 
     .populaires-cards a {
@@ -702,12 +727,21 @@ footer li {
 
     /* hébergements */
 
+    .hebergements-title {
+        margin-bottom: 0;
+    }
+
     .ensemble-hebergements-cards-1 {
         flex-direction: column;
     }
 
     .ensemble-hebergements-cards-2 {
         flex-direction: column;
+        padding: 0;
+    }
+
+    .hebergements-cards .card {
+        margin-top: 15px;
     }
 
     .hebergements-cards a {
