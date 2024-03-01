@@ -442,7 +442,8 @@ input[type="checkbox"]:checked + label {
 /******* footer ******/
 footer{
     background-color: var(--main-bg-color);
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
 }
 
