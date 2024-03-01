@@ -225,6 +225,7 @@ input[type="checkbox"]:checked + label {
     padding-right: 17px;
     font-size: 17px;
     line-height: 19.96px;
+    white-space: nowrap; 
 }
 
 /* info logements restants */
@@ -630,9 +631,12 @@ footer li {
         width: 100%;
     }
 
+    .research-input {
+        width: 100%;
+    }
+
     .form-recherche input {
-        width: 225px;
-        height: 49px;
+        width: 100%;
     }
 
     .research-button button {
@@ -662,6 +666,7 @@ footer li {
     .filtres-buttons {
         width: 100%;
         margin-right: 0;
+        min-width: 147px; 
     }
 
     .ensemble-filtre-buttons {
@@ -710,16 +715,13 @@ footer li {
     }
 
     .populaires-title {
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: column;
-    }
-
-    .populaires-cards .card {
-        margin-top: 15px;
+        gap: 15px;
     }
 
     .populaires-cards a {
@@ -729,20 +731,18 @@ footer li {
     /* hébergements */
 
     .hebergements-title {
-        margin-bottom: 0;
+        margin-bottom: 15;
     }
 
     .ensemble-hebergements-cards-1 {
         flex-direction: column;
+        gap: 15px;
     }
 
     .ensemble-hebergements-cards-2 {
         flex-direction: column;
-        padding: 0;
-    }
-
-    .hebergements-cards .card {
-        margin-top: 15px;
+        padding-top: 15px;
+        gap: 15px;
     }
 
     .hebergements-cards a {
@@ -776,4 +776,39 @@ footer li {
         margin-bottom: 50px;
     }
 
+}
+
+@media (max-width: 369.89px) {
+    .info-group {
+        padding: 0;
+    }
+
+    .info-group h1 {
+        padding: 0 20px;
+    }
+
+    .info-group p{
+        padding: 0 20px;
+    }
+    
+    .form-recherche {
+        padding: 0 20px;
+        width: auto;
+    }
+
+    .form-filtre p {
+        padding: 0 20px;
+    }
+    
+    .ensemble-filtre-buttons{
+        padding: 0;
+    }
+
+    .filtres-buttons{
+        min-width: 0;
+    }
+
+    .info {
+        padding: 0 20px;
+    }
 }
