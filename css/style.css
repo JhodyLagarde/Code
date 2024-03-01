@@ -706,7 +706,7 @@ footer li {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 0;
     }
 
     .populaires-title {
