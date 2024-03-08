@@ -82,8 +82,8 @@ header {
 header img {
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 61.09px;
-    height: 19px;
+    width: 3.813em;
+    height: 1.188em;
 }
 
 nav ul{
@@ -133,6 +133,10 @@ nav li a:hover{
     border-style: inset none;
     border-top: 1px solid #F2F2F2;
     border-bottom: 1px solid #F2F2F2;
+}
+
+.form-recherche input:focus {
+    outline:  none;
 }
 
 ::placeholder {
